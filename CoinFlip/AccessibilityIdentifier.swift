@@ -22,4 +22,6 @@ enum CoinFlipIdentifiers: String, AccessibilityIdentifier {
     case flipCoin
     case resetDecision
     case flipOutcome
+    case headsImage
+    case tailsImage
 }

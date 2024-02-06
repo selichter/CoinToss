@@ -17,4 +17,8 @@ extension XCUIElement {
         return self.staticTexts[id.identifier].firstMatch
     }
     
+    func otherElements(id: ElementId) -> XCUIElement {
+        return self.otherElements[id.identifier].firstMatch
+    }
+    
 }

@@ -11,6 +11,8 @@ enum ElementId {
     case flipCoin
     case resetDecision
     case flipOutcome
+    case headsImage
+    case tailsImage
     
     var identifier: String {
         switch self {
@@ -20,6 +22,10 @@ enum ElementId {
             return "resetDecision"
         case .flipOutcome:
             return "flipOutcome"
+        case .headsImage:
+            return "headsImage"
+        case .tailsImage:
+            return "tailsImage"
         }
     }
 }

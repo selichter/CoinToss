@@ -20,4 +20,12 @@ class CoinFlipScreen: BaseScreen {
     var flipOutcome: XCUIElement {
         return app.staticText(id: .flipOutcome)
     }
+    
+    var headsImage: XCUIElement {
+        return app.otherElements(id: .headsImage)
+    }
+    
+    var tailsImage: XCUIElement {
+        return app.otherElements(id: .tailsImage)
+    }
 }

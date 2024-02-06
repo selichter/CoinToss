@@ -16,6 +16,11 @@ class CoinFlipTests: BaseTests {
         XCTAssert(coinFlipScreen.flipOutcome.exists)
         let displayText = coinFlipScreen.flipOutcome.label
         XCTAssert(displayText == "Heads" || displayText == "Tails")
+        if displayText == "Heads" {
+            XCTAssert(coinFlipScreen.headsImage.exists)
+        } else {
+            XCTAssert(coinFlipScreen.tailsImage.exists)
+        }
         coinFlipScreen.resetDecision.tap()
         XCTAssert(coinFlipScreen.flipCoinButton.exists)
         

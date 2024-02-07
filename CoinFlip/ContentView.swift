@@ -15,9 +15,13 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text("Quick Flip")
+                .font(.title)
+                .accessibilityIdentifier(CoinFlipIdentifiers.quickFlipNavTitle.identifier)
+            Spacer()
             CoinView(coinSide: viewModel.outcome ?? .heads)
                 .rotation3DEffect(Angle(degrees: degreesToFlip),
-                                          axis: (x: 0.0, y: 10.0, z: 0.0)
+                                  axis: (x: 0.0, y: 10.0, z: 0.0)
                 )
                 .animation(.easeInOut, value: 1.0)
                 .onTapGesture {

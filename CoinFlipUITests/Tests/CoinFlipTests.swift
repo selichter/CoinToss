@@ -26,4 +26,17 @@ class CoinFlipTests: BaseTests {
         
         XCTAssertFalse(coinFlipScreen.flipOutcome.exists)
     }
+    
+    func testQuickFlipTab() {
+        coinFlipScreen.quickFlipTab.tap()
+        
+        XCTAssert(coinFlipScreen.flipCoinButton.exists)
+        XCTAssert(coinFlipScreen.flipCoinButton.isHittable)
+        XCTAssertEqual(coinFlipScreen.quickFlipNavTitle.label, "Quick Flip")
+    }
+    
+    func testDecisionTab() {
+        coinFlipScreen.decisionTab.tap()
+        XCTAssertEqual(coinFlipScreen.decisionNavTitle.label, "Decision")
+    }
 }

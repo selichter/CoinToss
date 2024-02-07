@@ -21,4 +21,8 @@ extension XCUIElement {
         return self.otherElements[id.identifier].firstMatch
     }
     
+    func tabBarItem(id: ElementId) -> XCUIElement {
+        return self.tabBars.buttons[id.identifier].firstMatch
+    }
+    
 }

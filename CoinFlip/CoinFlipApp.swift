@@ -17,7 +17,7 @@ struct CoinFlipApp: App {
     var body: some Scene {
         WindowGroup {
             if isProduction {
-                ContentView()
+                TabNavigationView()
             } else {
                 let _ = print("test launch")
             }

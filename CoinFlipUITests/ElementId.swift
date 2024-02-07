@@ -13,6 +13,10 @@ enum ElementId {
     case flipOutcome
     case headsImage
     case tailsImage
+    case quickFlipTab
+    case quickFlipNavTitle
+    case decisionTab
+    case decisionNavTitle
     
     var identifier: String {
         switch self {
@@ -26,6 +30,14 @@ enum ElementId {
             return "headsImage"
         case .tailsImage:
             return "tailsImage"
+        case .quickFlipTab:
+            return "quickFlipTab"
+        case .quickFlipNavTitle:
+            return "quickFlipNavTitle"
+        case .decisionTab:
+            return "decisionTab"
+        case .decisionNavTitle:
+            return "decisionNavTitle"
         }
     }
 }

@@ -28,4 +28,22 @@ class CoinFlipScreen: BaseScreen {
     var tailsImage: XCUIElement {
         return app.otherElements(id: .tailsImage)
     }
+    
+    #warning("these may need their own screen class")
+    var quickFlipTab: XCUIElement {
+        return app.tabBarItem(id: .quickFlipTab)
+    }
+    
+    var decisionTab: XCUIElement {
+        return app.tabBarItem(id: .decisionTab)
+    }
+    
+    var quickFlipNavTitle: XCUIElement {
+        return app.staticText(id: .quickFlipNavTitle)
+    }
+    
+    var decisionNavTitle: XCUIElement {
+        return app.staticText(id: .decisionNavTitle)
+    }
+        
 }

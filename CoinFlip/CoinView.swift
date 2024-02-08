@@ -11,15 +11,10 @@ struct CoinView: View {
     var coinSide: CoinSide
     
     var body: some View {
-        ZStack {
-            Circle()
-                .fill(coinSide.secondaryColor)
-                .frame(width: 100, height: 100)
-            Circle()
-                .fill(coinSide.mainColor)
-                .frame(width: 90, height: 90)
-        }
-        .accessibilityIdentifier(coinSide.imageIdentifier)
+        coinSide.image
+            .resizable()
+            .frame(width: 200, height: 200)
+            .accessibilityIdentifier(coinSide.imageIdentifier)
     }
 }
 

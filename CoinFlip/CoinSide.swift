@@ -21,26 +21,17 @@ enum CoinSide: CaseIterable {
         }
     }
     
+    var image: Image {
+        switch self {
+        case .heads:
+            return Image("heads")
+        case .tails:
+            return Image("tails")
+        }
+    }
+    
     var isHeads: Bool {
         return self == .heads
-    }
-    
-    var mainColor: Color {
-        switch self {
-        case .heads:
-            return .blue
-        case .tails:
-            return .orange
-        }
-    }
-    
-    var secondaryColor: Color {
-        switch self {
-        case .heads:
-            return .gray
-        case .tails:
-            return .yellow
-        }
     }
     
     var imageIdentifier: String {

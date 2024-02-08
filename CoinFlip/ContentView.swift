@@ -48,6 +48,7 @@ struct ContentView: View {
                     
                 }.accessibilityIdentifier(CoinFlipIdentifiers.flipCoin.identifier)
             }
+            Spacer()
         }
         .padding()
     }

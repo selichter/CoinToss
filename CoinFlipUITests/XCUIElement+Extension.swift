@@ -25,4 +25,8 @@ extension XCUIElement {
         return self.tabBars.buttons[id.identifier].firstMatch
     }
     
+    func image(id: ElementId) -> XCUIElement {
+        return self.images[id.identifier].firstMatch
+    }
+    
 }

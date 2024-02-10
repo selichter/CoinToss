@@ -22,20 +22,11 @@ class CoinFlipScreen: BaseScreen {
     }
     
     var headsImage: XCUIElement {
-        return app.otherElements(id: .headsImage)
+        return app.image(id: .headsImage)
     }
     
     var tailsImage: XCUIElement {
-        return app.otherElements(id: .tailsImage)
-    }
-    
-    #warning("these may need their own screen class")
-    var quickFlipTab: XCUIElement {
-        return app.tabBarItem(id: .quickFlipTab)
-    }
-    
-    var decisionTab: XCUIElement {
-        return app.tabBarItem(id: .decisionTab)
+        return app.image(id: .tailsImage)
     }
     
     var quickFlipNavTitle: XCUIElement {

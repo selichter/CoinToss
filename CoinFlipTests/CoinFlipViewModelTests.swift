@@ -13,6 +13,7 @@ final class CoinFlipViewModelTests: XCTestCase {
     func testInitialization() {
         let viewModel = CoinFlipViewModel()
         XCTAssertEqual(viewModel.options, [CoinSide.heads, CoinSide.tails])
+        XCTAssertEqual(viewModel.degreesToFlip, 0)
         XCTAssertNil(viewModel.outcome)
     }
     
@@ -27,6 +28,7 @@ final class CoinFlipViewModelTests: XCTestCase {
         let viewModel = CoinFlipViewModel()
         viewModel.flipCoin()
         
+        XCTAssertEqual(viewModel.degreesToFlip, 360)
         XCTAssertNotNil(viewModel.outcome)
     }
     
@@ -36,5 +38,6 @@ final class CoinFlipViewModelTests: XCTestCase {
         
         viewModel.clearBoard()
         XCTAssertNil(viewModel.outcome)
+        XCTAssertEqual(viewModel.degreesToFlip, 0)
     }
 }

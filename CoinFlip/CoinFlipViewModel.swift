@@ -12,6 +12,7 @@ import Observation
 class CoinFlipViewModel {
     let options = CoinSide.allCases
     var outcome: CoinSide?
+    var degreesToFlip: Double = 0
     
     func getOption() -> String {
         return options.randomElement()?.name ?? "Something went wrong"
@@ -23,6 +24,7 @@ class CoinFlipViewModel {
     
     func flipCoin() {
         guard let decision = options.randomElement() else { return }
+        degreesToFlip += 360
         setOutcome(decision: decision)
     }
     

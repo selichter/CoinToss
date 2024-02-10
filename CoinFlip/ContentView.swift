@@ -10,8 +10,6 @@ import Observation
 
 struct ContentView: View {
     var viewModel = CoinFlipViewModel()
-    @State var isFlipping = false
-    @State var degreesToFlip: Double = 0
     
     var body: some View {
         VStack {
@@ -20,14 +18,12 @@ struct ContentView: View {
                 .accessibilityIdentifier(CoinFlipIdentifiers.quickFlipNavTitle.identifier)
             Spacer()
             CoinView(coinSide: viewModel.outcome ?? .heads)
-                .rotation3DEffect(Angle(degrees: degreesToFlip),
+                .rotation3DEffect(Angle(degrees: viewModel.degreesToFlip),
                                   axis: (x: 0.0, y: 10.0, z: 0.0)
                 )
                 .animation(.easeInOut, value: 1.0)
                 .onTapGesture {
                     withAnimation {
-                        self.degreesToFlip += 360
-                        self.isFlipping.toggle()
                         viewModel.flipCoin()
                     }
                 }
@@ -41,8 +37,6 @@ struct ContentView: View {
             } else {
                 Button("Flip Coin") {
                     withAnimation {
-                        self.degreesToFlip += 360
-                        self.isFlipping.toggle()
                         viewModel.flipCoin()
                     }
                     

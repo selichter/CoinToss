@@ -28,6 +28,7 @@
 		8D69338C2B5323320088D292 /* CoinFlipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69338B2B5323320088D292 /* CoinFlipUITestsLaunchTests.swift */; };
 		8DB9AE8A2B5767B4003BE3AF /* CoinFlipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9AE892B5767B3003BE3AF /* CoinFlipViewModel.swift */; };
 		8DB9AE8C2B57681B003BE3AF /* GamePhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9AE8B2B57681B003BE3AF /* GamePhase.swift */; };
+		8DE767742B81582700393D2C /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE767732B81582700393D2C /* PreviewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		8D69338B2B5323320088D292 /* CoinFlipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlipUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8DB9AE892B5767B3003BE3AF /* CoinFlipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlipViewModel.swift; sourceTree = "<group>"; };
 		8DB9AE8B2B57681B003BE3AF /* GamePhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePhase.swift; sourceTree = "<group>"; };
+		8DE767732B81582700393D2C /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				8D28C0782B71C0C3001FDAEF /* CoinView.swift */,
 				8D28C07B2B73F5B9001FDAEF /* TabNavigationView.swift */,
 				8D28C07D2B73FDFE001FDAEF /* DecisionView.swift */,
+				8DE767732B81582700393D2C /* PreviewData.swift */,
 			);
 			path = CoinFlip;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DE767742B81582700393D2C /* PreviewData.swift in Sources */,
 				8DB9AE8A2B5767B4003BE3AF /* CoinFlipViewModel.swift in Sources */,
 				8D28C0772B6AD7BD001FDAEF /* CoinSide.swift in Sources */,
 				8D28C0792B71C0C3001FDAEF /* CoinView.swift in Sources */,

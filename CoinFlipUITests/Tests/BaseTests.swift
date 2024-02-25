@@ -27,4 +27,12 @@ class BaseTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+    
+    func testAutomatedAccessibility() {
+        do {
+            try app.performAccessibilityAudit()
+        } catch {
+            XCTFail("Accessibility Audit Failed")
+        }
+    }
 }

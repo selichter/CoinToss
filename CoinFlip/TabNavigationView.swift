@@ -10,7 +10,7 @@ import SwiftUI
 struct TabNavigationView: View {
     var body: some View {
         TabView {
-            ContentView()
+            ContentView(viewModel: CoinFlipViewModel())
                 .tabItem {
                     Image(systemName: "arrow.clockwise")
                     Text("Quick Flip")

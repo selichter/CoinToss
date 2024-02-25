@@ -9,17 +9,30 @@ import SwiftUI
 import Observation
 
 struct ContentView: View {
-    var viewModel = CoinFlipViewModel()
+    var viewModel: CoinFlipViewModel
     
     var body: some View {
-        VStack {
-            Text("Quick Flip")
-                .font(.title)
-                .accessibilityIdentifier(CoinFlipIdentifiers.quickFlipNavTitle.identifier)
-            Spacer()
+        VStack(spacing: 32) {
+            
+            if !viewModel.isFlipping {
+                Text(viewModel.outcome?.name ?? "Flip the coin to decide")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .accessibilityIdentifier(CoinFlipIdentifiers.flipOutcome.identifier)
+            }
+            
             CoinView(coinSide: viewModel.outcome ?? .heads)
                 .rotation3DEffect(Angle(degrees: viewModel.degreesToFlip),
                                   axis: (x: 0.0, y: 10.0, z: 0.0)
+                )
+                .gesture(
+                    DragGesture()
+                        .onChanged { _ in
+                            withAnimation {
+                                viewModel.flipCoin()
+                            }
+                            
+                        }
                 )
                 .animation(.easeInOut, value: 1.0)
                 .onTapGesture {
@@ -28,26 +41,26 @@ struct ContentView: View {
                     }
                 }
             
-            if let outcome = viewModel.outcome {
-                Text(outcome.name)
-                    .accessibilityIdentifier(CoinFlipIdentifiers.flipOutcome.identifier)
-                Button("Reset Decision") {
-                    viewModel.clearBoard()
-                }.accessibilityIdentifier(CoinFlipIdentifiers.resetDecision.identifier)
-            } else {
-                Button("Flip Coin") {
-                    withAnimation {
-                        viewModel.flipCoin()
-                    }
-                    
-                }.accessibilityIdentifier(CoinFlipIdentifiers.flipCoin.identifier)
-            }
-            Spacer()
+            Text("Swipe to flip")
+                .font(.footnote)
+                .padding(.top)
+            
         }
         .padding()
     }
 }
 
-#Preview {
-    ContentView()
+
+
+
+#Preview("Initial") {
+    ContentView(viewModel: CoinFlipViewModel())
+}
+
+#Preview("Heads State") {
+    ContentView(viewModel: PreviewData.headsViewModel)
+}
+
+#Preview("Tails State") {
+    ContentView(viewModel: PreviewData.tailsViewModel)
 }

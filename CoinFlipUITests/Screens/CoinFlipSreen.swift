@@ -29,12 +29,9 @@ class CoinFlipScreen: BaseScreen {
         return app.image(id: .tailsImage)
     }
     
-    var quickFlipNavTitle: XCUIElement {
-        return app.staticText(id: .quickFlipNavTitle)
+    var helpText: XCUIElement {
+        return app.staticText(id: .helpText)
     }
-    
-    var decisionNavTitle: XCUIElement {
-        return app.staticText(id: .decisionNavTitle)
-    }
+
         
 }

@@ -16,7 +16,6 @@ class BaseTests: XCTestCase {
     
     let baseScreen = BaseScreen()
     let coinFlipScreen = CoinFlipScreen()
-    let tabNavigation = TabNavigation()
     
     override func setUp() {
         super.setUp()

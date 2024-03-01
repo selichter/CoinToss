@@ -17,9 +17,6 @@
 		8D28C0752B6ACAE6001FDAEF /* CoinFlipViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28C0742B6ACAE6001FDAEF /* CoinFlipViewModelTests.swift */; };
 		8D28C0772B6AD7BD001FDAEF /* CoinSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28C0762B6AD7BD001FDAEF /* CoinSide.swift */; };
 		8D28C0792B71C0C3001FDAEF /* CoinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28C0782B71C0C3001FDAEF /* CoinView.swift */; };
-		8D28C07C2B73F5B9001FDAEF /* TabNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28C07B2B73F5B9001FDAEF /* TabNavigationView.swift */; };
-		8D28C07E2B73FDFE001FDAEF /* DecisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28C07D2B73FDFE001FDAEF /* DecisionView.swift */; };
-		8D28C0872B77078C001FDAEF /* TabNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D28C0862B77078C001FDAEF /* TabNavigation.swift */; };
 		8D69336F2B5323300088D292 /* CoinFlipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69336E2B5323300088D292 /* CoinFlipApp.swift */; };
 		8D6933712B5323300088D292 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6933702B5323300088D292 /* ContentView.swift */; };
 		8D6933732B5323320088D292 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6933722B5323320088D292 /* Assets.xcassets */; };
@@ -59,9 +56,6 @@
 		8D28C0742B6ACAE6001FDAEF /* CoinFlipViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlipViewModelTests.swift; sourceTree = "<group>"; };
 		8D28C0762B6AD7BD001FDAEF /* CoinSide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSide.swift; sourceTree = "<group>"; };
 		8D28C0782B71C0C3001FDAEF /* CoinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinView.swift; sourceTree = "<group>"; };
-		8D28C07B2B73F5B9001FDAEF /* TabNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationView.swift; sourceTree = "<group>"; };
-		8D28C07D2B73FDFE001FDAEF /* DecisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecisionView.swift; sourceTree = "<group>"; };
-		8D28C0862B77078C001FDAEF /* TabNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigation.swift; sourceTree = "<group>"; };
 		8D69336B2B5323300088D292 /* CoinFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D69336E2B5323300088D292 /* CoinFlipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlipApp.swift; sourceTree = "<group>"; };
 		8D6933702B5323300088D292 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,7 +100,6 @@
 			children = (
 				8D28C0662B688E83001FDAEF /* BaseScreen.swift */,
 				8D28C0702B693B16001FDAEF /* CoinFlipSreen.swift */,
-				8D28C0862B77078C001FDAEF /* TabNavigation.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -152,8 +145,6 @@
 				8D28C0722B693FB5001FDAEF /* AccessibilityIdentifier.swift */,
 				8D28C0762B6AD7BD001FDAEF /* CoinSide.swift */,
 				8D28C0782B71C0C3001FDAEF /* CoinView.swift */,
-				8D28C07B2B73F5B9001FDAEF /* TabNavigationView.swift */,
-				8D28C07D2B73FDFE001FDAEF /* DecisionView.swift */,
 				8DE767732B81582700393D2C /* PreviewData.swift */,
 			);
 			path = CoinFlip;
@@ -323,8 +314,6 @@
 				8D28C0772B6AD7BD001FDAEF /* CoinSide.swift in Sources */,
 				8D28C0792B71C0C3001FDAEF /* CoinView.swift in Sources */,
 				8DB9AE8C2B57681B003BE3AF /* GamePhase.swift in Sources */,
-				8D28C07C2B73F5B9001FDAEF /* TabNavigationView.swift in Sources */,
-				8D28C07E2B73FDFE001FDAEF /* DecisionView.swift in Sources */,
 				8D28C0732B693FB5001FDAEF /* AccessibilityIdentifier.swift in Sources */,
 				8D6933712B5323300088D292 /* ContentView.swift in Sources */,
 				8D69336F2B5323300088D292 /* CoinFlipApp.swift in Sources */,
@@ -349,7 +338,6 @@
 				8D28C06B2B688F32001FDAEF /* ElementId.swift in Sources */,
 				8D28C0712B693B16001FDAEF /* CoinFlipSreen.swift in Sources */,
 				8D28C06D2B688FFF001FDAEF /* BaseTests.swift in Sources */,
-				8D28C0872B77078C001FDAEF /* TabNavigation.swift in Sources */,
 				8D28C0692B688EEF001FDAEF /* XCUIElement+Extension.swift in Sources */,
 				8D28C0672B688E83001FDAEF /* BaseScreen.swift in Sources */,
 			);

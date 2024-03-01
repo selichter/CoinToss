@@ -10,10 +10,10 @@ import XCTest
 class CoinFlipTests: BaseTests {
     
     func testFlipCoin() {
-        coinFlipScreen.flipCoinButton.tap()
-        XCTAssert(coinFlipScreen.resetDecision.exists)
+        XCTAssertEqual(coinFlipScreen.flipOutcome.label, "Flip the coin to decide")
+        XCTAssertEqual(coinFlipScreen.helpText.label, "Swipe to flip")
+        coinFlipScreen.headsImage.tap()
         
-        XCTAssert(coinFlipScreen.flipOutcome.exists)
         let displayText = coinFlipScreen.flipOutcome.label
         XCTAssert(displayText == "Heads" || displayText == "Tails")
         if displayText == "Heads" {
@@ -21,22 +21,6 @@ class CoinFlipTests: BaseTests {
         } else {
             XCTAssert(coinFlipScreen.tailsImage.exists)
         }
-        coinFlipScreen.resetDecision.tap()
-        XCTAssert(coinFlipScreen.flipCoinButton.exists)
-        
-        XCTAssertFalse(coinFlipScreen.flipOutcome.exists)
     }
-    
-    func testQuickFlipTab() {
-        tabNavigation.quickFlipTab.tap()
-        
-        XCTAssert(coinFlipScreen.flipCoinButton.exists)
-        XCTAssert(coinFlipScreen.flipCoinButton.isHittable)
-        XCTAssertEqual(coinFlipScreen.quickFlipNavTitle.label, "Quick Flip")
-    }
-    
-    func testDecisionTab() {
-        tabNavigation.decisionTab.tap()
-        XCTAssertEqual(coinFlipScreen.decisionNavTitle.label, "Decision")
-    }
+
 }

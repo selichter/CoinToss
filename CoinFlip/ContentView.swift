@@ -44,6 +44,7 @@ struct ContentView: View {
             Text("Swipe to flip")
                 .font(.footnote)
                 .padding(.top)
+                .accessibilityIdentifier(CoinFlipIdentifiers.helpText.identifier)
             
         }
         .padding()

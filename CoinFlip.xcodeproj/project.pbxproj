@@ -24,7 +24,6 @@
 		8D6933802B5323320088D292 /* CoinFlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69337F2B5323320088D292 /* CoinFlipTests.swift */; };
 		8D69338C2B5323320088D292 /* CoinFlipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69338B2B5323320088D292 /* CoinFlipUITestsLaunchTests.swift */; };
 		8DB9AE8A2B5767B4003BE3AF /* CoinFlipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9AE892B5767B3003BE3AF /* CoinFlipViewModel.swift */; };
-		8DB9AE8C2B57681B003BE3AF /* GamePhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB9AE8B2B57681B003BE3AF /* GamePhase.swift */; };
 		8DE767742B81582700393D2C /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE767732B81582700393D2C /* PreviewData.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +65,6 @@
 		8D6933852B5323320088D292 /* CoinFlipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinFlipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D69338B2B5323320088D292 /* CoinFlipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlipUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8DB9AE892B5767B3003BE3AF /* CoinFlipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinFlipViewModel.swift; sourceTree = "<group>"; };
-		8DB9AE8B2B57681B003BE3AF /* GamePhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePhase.swift; sourceTree = "<group>"; };
 		8DE767732B81582700393D2C /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -141,7 +139,6 @@
 				8D6933722B5323320088D292 /* Assets.xcassets */,
 				8D6933742B5323320088D292 /* Preview Content */,
 				8DB9AE892B5767B3003BE3AF /* CoinFlipViewModel.swift */,
-				8DB9AE8B2B57681B003BE3AF /* GamePhase.swift */,
 				8D28C0722B693FB5001FDAEF /* AccessibilityIdentifier.swift */,
 				8D28C0762B6AD7BD001FDAEF /* CoinSide.swift */,
 				8D28C0782B71C0C3001FDAEF /* CoinView.swift */,
@@ -313,7 +310,6 @@
 				8DB9AE8A2B5767B4003BE3AF /* CoinFlipViewModel.swift in Sources */,
 				8D28C0772B6AD7BD001FDAEF /* CoinSide.swift in Sources */,
 				8D28C0792B71C0C3001FDAEF /* CoinView.swift in Sources */,
-				8DB9AE8C2B57681B003BE3AF /* GamePhase.swift in Sources */,
 				8D28C0732B693FB5001FDAEF /* AccessibilityIdentifier.swift in Sources */,
 				8D6933712B5323300088D292 /* ContentView.swift in Sources */,
 				8D69336F2B5323300088D292 /* CoinFlipApp.swift in Sources */,
